@@ -41,7 +41,7 @@ body {
 }
 
 .ch-header {
-  margin: 5px auto;
+  margin: 3px auto;
   background: #eee;
   height: 20px;
 }
@@ -87,7 +87,8 @@ h2 {
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
-  line-height: 18px; }
+  line-height: 18px;
+}
 
 pre {
   background-color: #eee;
@@ -97,10 +98,13 @@ pre {
 a {
   color: #000;
   &:visited {
-    color: #666; }
+    color: #666; 
+  }
   &:hover {
     color: #fff;
-    background-color: #000; } }
+    background-color: #000;
+  } 
+}
 
 div {
   &.field, &.actions {
