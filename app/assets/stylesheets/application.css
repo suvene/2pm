@@ -11,3 +11,133 @@
  *= require_self
  *= require_tree .
 */
+
+/* Elastic Layout: 2 columns, left fixed sidebar */
+
+/* http://chico-ui.com.ar/mesh/demos/elastic-2columns-leftsidebar.html */
+.ch-fixed-sidebar {
+	float: left;
+	width:220px; /* defines fixed column width */
+}	
+
+.ch-left.ch-fixed-sidebar {
+	margin:0px 10px 0px 0px; /* margin-right, gutter */
+}
+
+.ch-right.ch-elastic-content {
+	margin:0px 0px 0px 225px; /* same as width, plus gutter */
+}
+
+/* ------------------------------------------------------- *
+ * --- just to highlight columns - you can delete these -- *
+ * -------------    use chico.css for styles   ----------- *
+ * ------------------------------------------------------- */
+
+body {
+  margin: 5px;
+  padding: 0px;
+  color: #333333;
+  font: 13px/20px Arial,Helvetica,"Nimbus Sans L",sans-serif;
+}
+
+.ch-header {
+  margin: 5px auto;
+  background: #eee;
+  height: 20px;
+}
+
+.ch-footer {
+  clear:both;
+  text-align: right;
+  margin: 5px auto;
+  background: #eee;
+}
+
+.ch-box {
+  border: 1px solid #ccc;
+  padding: 5px 15px;
+}
+
+.ch-fixed-sidebar .ch-box, .ch-elastic-content .ch-box { 
+  height: 960px;
+}
+
+.ch-fixed-sidebar .ch-box {
+  background-color: #ccc;
+}
+
+/* custom */
+.head-title {
+  font-size: 1.8em;
+}
+
+
+/* standard */
+h1 {
+  !important margin; 0px;
+  font-size: 2em;
+}
+
+h2 {
+  !important margin; 0px;
+  font-size: 1.5em;
+}
+
+/* scafolld */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px; }
+
+a {
+  color: #000;
+  &:visited {
+    color: #666; }
+  &:hover {
+    color: #fff;
+    background-color: #000; } }
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square; 
+  }
+}
+
