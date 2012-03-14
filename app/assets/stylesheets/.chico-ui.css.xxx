@@ -1,0 +1,163 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+/* Elastic Layout: 2 columns, left fixed sidebar */
+
+/* http://chico-ui.com.ar/mesh/demos/elastic-2columns-leftsidebar.html */
+.ch-fixed-sidebar {
+  float: left;
+  width: 100px; /* defines fixed column width */
+}
+
+.ch-left.ch-fixed-sidebar {
+  margin:0px 1px 0px 0px; /* margin-right, gutter */
+}
+
+.ch-right.ch-elastic-content {
+  margin:0px 0px 0px 100px; /* same as width, plus gutter */
+}
+
+/* ------------------------------------------------------- *
+ * --- just to highlight columns - you can delete these -- *
+ * -------------    use chico.css for styles   ----------- *
+ * ------------------------------------------------------- */
+
+body {
+  margin: 5px;
+  padding: 0px;
+  color: #333333;
+  font: 13px/20px Arial,Helvetica,"Nimbus Sans L",sans-serif;
+  overflow: hidden;
+}
+
+.ch-header {
+  margin: 1px auto;
+  background: #fbb;
+  height: 20px;
+}
+
+.ch-footer {
+  clear: both;
+  margin: 1px 0px 5px 0px;
+  /* margin: 10px -10px -5px -20px; */
+  padding: 7px 10px 2px 3px;
+  text-align: right;
+  border: 1px solid #ccc;
+  background: #fbb;
+  height: 20px;
+}
+
+.ch-box {
+  border: 1px solid #ccc;
+  padding: 10px 15px 5px 10px;
+}
+
+.ch-fixed-sidebar .ch-box, .ch-elastic-content .ch-box { 
+  overflow: auto;
+  height: 650px;
+}
+
+.ch-fixed-sidebar .ch-box {
+  background: #fdd;
+}
+
+/* custom */
+.head-title {
+  color: #469;
+  font-size: 1.8em;
+}
+
+.menu-top {
+}
+
+
+/* standard */
+/*
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+table {
+  border: 1px solid #88a;
+}
+*/
+
+/* scafolld */
+/*
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px; }
+
+a {
+  color: #000;
+  &:visited {
+    color: #666; 
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  } 
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square; 
+  }
+}
+*/
+

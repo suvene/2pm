@@ -1,9 +1,9 @@
-<h1>Listing projects</h1>
-
-<table>
+<%= link_to '新規プロジェクト', new_project_path %>
+<br />
+<table width='100%'>
   <tr>
-    <th>Task no</th>
-    <th>Name</th>
+    <th width='50px' align='center'>タスク<br>番号</th>
+    <th>プロジェクト名</th>
     <th>Lock version</th>
     <th></th>
     <th></th>
@@ -12,9 +12,8 @@
 
 <% @projects.each do |project| %>
   <tr>
-    <td><%= project.task_no %></td>
+    <td align='center'><%= project.task_no %></td>
     <td><%= project.name %></td>
-    <td><%= project.lock_version %></td>
     <td><%= link_to 'Show', project %></td>
     <td><%= link_to 'Edit', edit_project_path(project) %></td>
     <td><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td>
@@ -22,6 +21,4 @@
 <% end %>
 </table>
 
-<br />
 
-<%= link_to 'New Project', new_project_path %>
