@@ -590,7 +590,8 @@ legend {
   margin-bottom: 27px;
   font-size: 19.5px;
   line-height: 36px;
-  color: #333333;
+  /* origin color: #333333; */
+  color: #531300;
   border: 0;
   border-bottom: 1px solid #eee;
 }
