@@ -1,5 +1,8 @@
 Ror2pm::Application.routes.draw do
+  resources :users
+
   resources :projects
+  resources :manage
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
