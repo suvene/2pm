@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120315233310) do
+ActiveRecord::Schema.define(:version => 20120315235203) do
 
   create_table "projects", :force => true do |t|
     t.string   "task_no",                     :null => false
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20120315233310) do
   end
 
   create_table "users", :force => true do |t|
+    t.string   "uid"
     t.string   "name"
     t.string   "mail"
     t.integer  "lock_version"
