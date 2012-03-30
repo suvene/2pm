@@ -1,8 +1,19 @@
-<h1>立上げ・計画</h1>
-
-<br />
-<%= link_to '新規プロジェクト', new_project_path %>
-<br />
+<% content_for :side_menu do %>
+  <div class="container-fluid tpm-container">
+    <div class="row-fluid">
+      <div class="span3 tpm-box">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">新規</li>
+              <li><%= link_to 'プロジェクト作成', new_project_path %></li>
+              <li><a href="#">プロジェクト-タスク作成</a></li>
+              <li class="nav-header">変更</li>
+              <li><a href="#">課題管理</a></li>
+              <li><a href="#">変更管理</a></li>
+            </ul>
+          </div><!--/.well -->
+      </div>
+<% end %>
 
 <table width='100%'>
   <tr>
