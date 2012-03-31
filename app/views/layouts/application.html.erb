@@ -16,7 +16,7 @@
 
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
-      <div class="container-fluid">
+      <div class="container">
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -32,22 +32,23 @@
             <li><%= link_to('報告', '#' ) %></li>
             <li><%= link_to('設定', '#' ) %></li>
           </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /container -->
+    </div><!-- /navbar-inner -->
+  </div><!-- /nabvar navbar-fixed-top -->
 
-<%= yield :side_menu %>
-      <div class="span9 tpm-box">
-          <div class="tpm-content">
+  <div class="subnav">
+<%= yield :submenu %>
+  </div><!-- /subnav -->
+
+  <div class="tpm-container">
 <%= yield %>
-          </div>
-      </div>
-    </div>
-  </div>
-    <div class="tpm-footer">
-      &copy;2012 suVene&lt;suvene@zeromemory.info&gt;
-    </div>
+  </div><!-- /tpm-container -->
+
+  <div class="navbar navbar-fixed-bottom tpm-footer">
+    &copy;2012 suVene&lt;suvene@zeromemory.info&gt;
+  </div><!-- navbar navbar-fixed-bottom -->
+
 <script type="text/javascript">
 //<![CDATA[
 //]]>

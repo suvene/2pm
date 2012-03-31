@@ -2519,12 +2519,11 @@ input[type="submit"].btn.btn-mini {
 .nav-list > .active > a,
 .nav-list > .active > a:hover {
   color: #ffffff;
-  /* custom color: #F9AEC5; */
-  /* custom color: #F9AEC5; */
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
   background-color: #0088cc;
-  /* custom background-color: #EE2D68; */
-  background-color: #AAC4EA;
+  /* color: #F9AEC5; */
+  /* background-color: #EE2D68; */
+  /* background-color: #AAC4EA; */
 }
 .nav-list [class^="icon-"] {
   margin-right: 2px;
