@@ -202,10 +202,10 @@
   .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
-    width: 724px;
+    width: 874px;
   }
   .span12 {
-    width: 724px;
+    width: 874px;
   }
   .span11 {
     width: 662px;
@@ -378,11 +378,11 @@
     padding-top: 0;
   }
   .navbar-fixed-top {
-    position: static;
+    /* position: static; always on top */
     margin-bottom: 0px;
   }
   .navbar-fixed-top .navbar-inner {
-    padding: 5px;
+    /* padding: 5px; same padding */
   }
   .navbar .container {
     width: auto;
