@@ -27,6 +27,13 @@
     <%= f.label :mail %>
     <%= f.text_field :mail %>
   </div>
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.text_field :password %>
+  </div>
+  <div class="field">
+    <%= f.hidden_field :lock_version %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
