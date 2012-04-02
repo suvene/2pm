@@ -1,4 +1,6 @@
 Ror2pm::Application.routes.draw do
+  get "settings/index"
+
   resources :users
 
   resources :projects

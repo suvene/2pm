@@ -1,3 +1,10 @@
+<% content_for :submenu do %>
+  <ul class="nav nav-pills">
+    <li><%= link_to('ユーザ', { :controller => 'users' } ) %></li>
+    <li><a href="#">グループ</a></li>
+  </ul>
+<% end %>
+
 <legend>Lsting users</legend>
 
 <br />
@@ -16,7 +23,7 @@
 
 <% @users.each do |user| %>
   <tr>
-    <td><%= user.uid %></td>
+    <td><%= user.cd %></td>
     <td><%= user.name %></td>
     <td><%= user.mail %></td>
     <td><%= link_to 'Show', user %></td>
