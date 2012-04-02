@@ -13,36 +13,38 @@
  *= require_tree .
 */
 body {
-  margin: 0px;
-  padding-top: 50px;
-  padding-bottom: 40px;
+/*   margin: 0px; */
+/*   padding-top: 50px; */
+/*   padding-bottom: 40px; */
 }
 
 /* custom */
 .tpm-container {
-  padding: 0px 0px 0px -20px !important;
-  padding-left: -20px !important;
+  padding: 10px 20px 10px 20px;
+  margin: 0px;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  /* width; 95%; */
 }
 
-
-.tpm-box {
-/*  border: 1px solid #ccc; */
+@media (min-width: 780px) {
+  .tpm-container {
+    margin: 10px 0px 0px 20px;
+  }
 }
-
-.row .tpm-box, .row-fluid .tpm-box { 
-  overflow: auto;
-  /*height: 650px; */
-}
-
 
 .tpm-footer {
+  /*
   clear: both;
   margin: 0px 0px 0px 0px;
   padding: 7px 10px 2px 3px;
+  */
   text-align: right;
   border: 1px solid #ccc;
-  height: 20px;
-  color: #DDDDDD;
+  height: 25px;
+  color: #452214 !important;
   background-color: #FB6492;
   background-image: -moz-linear-gradient(top, #FB6492, #AA0033);
   background-image: -ms-linear-gradient(top, #FB6492, #AA0033);
@@ -58,14 +60,5 @@ body {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-}
-
-.tpm-content {
-  padding: 30px 20px;
-  margin-bottom: 30px;
-  background-color: #eeeeee;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
 }
 

@@ -136,13 +136,11 @@ body {
   font-family: "ヒラギノ角ゴ  Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ","Meiryo","ＭＳ Ｐゴシック",verdana,arial,sans-serif;
   font-size: 13px;
   line-height: 18px;
-  /* origin color: #333333; */
   color: #6E5C56;
   background-color: #ffffff;
 }
 a {
-  /* origin color: #0088cc; */
-  color: #290D76;
+  color: #290D76; /* navi toka */
   text-decoration: none;
 }
 a:hover {
@@ -2519,12 +2517,11 @@ input[type="submit"].btn.btn-mini {
 .nav-list > .active > a,
 .nav-list > .active > a:hover {
   color: #ffffff;
-  /* custom color: #F9AEC5; */
-  /* custom color: #F9AEC5; */
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
   background-color: #0088cc;
-  /* custom background-color: #EE2D68; */
-  background-color: #AAC4EA;
+  /* color: #F9AEC5; */
+  /* background-color: #EE2D68; */
+  /* background-color: #AAC4EA; */
 }
 .nav-list [class^="icon-"] {
   margin-right: 2px;
