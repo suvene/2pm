@@ -423,9 +423,9 @@
   }
   .navbar .nav > li > a,
   .navbar .dropdown-menu a {
-    padding: 6px 15px;
+    padding: 6px 35px;
     font-weight: bold;
-    color: #999999;
+    color: #aaa; /* dropdown-color */
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -435,7 +435,7 @@
   }
   .navbar .nav > li > a:hover,
   .navbar .dropdown-menu a:hover {
-    background-color: #222222;
+    background-color: #c62642; /* dropdown-background */
   }
   .navbar .dropdown-menu {
     position: static;

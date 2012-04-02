@@ -140,11 +140,11 @@ body {
   background-color: #ffffff;
 }
 a {
-  color: #290D76; /* navi toka */
+  color: #7a4171; /* navi toka */
   text-decoration: none;
 }
 a:hover {
-  color: #005580;
+  color: #594925;
   text-decoration: underline;
 }
 .row {
@@ -1855,7 +1855,7 @@ icoo-glass {
 .dropdown-menu li > a:hover,
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
-  color: #ffffff;
+  color: #eee;
   text-decoration: none;
   background-color: #0088cc;
 }
@@ -2849,7 +2849,7 @@ input[type="submit"].btn.btn-mini {
 .btn-navbar.active,
 .btn-navbar.disabled,
 .btn-navbar[disabled] {
-  background-color: #222222;
+  background-color: #AA0333;
 }
 .btn-navbar:active,
 .btn-navbar.active {
@@ -3010,7 +3010,7 @@ input[type="submit"].btn.btn-mini {
   left: 0;
   display: block;
   float: left;
-  margin: 0 10px 0 0;
+  margin: 0 10px 0 20px;
 }
 .navbar .nav.pull-right {
   float: right;
@@ -3023,22 +3023,21 @@ input[type="submit"].btn.btn-mini {
   float: none;
   padding: 10px 10px 11px;
   line-height: 19px;
-  /* origin color: #999999; */
-  color: #93002D;
-  color: #dddddd;
+  color: #aaa;
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .navbar .nav > li > a:hover {
   background-color: transparent;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 .navbar .nav .active > a,
 .navbar .nav .active > a:hover {
-  color: #ffffff;
+  color: #eee;
   text-decoration: none;
-  background-color: #222222;
+  font-weight: bold;
+  background-color: transparent;
 }
 .navbar .divider-vertical {
   height: 40px;
