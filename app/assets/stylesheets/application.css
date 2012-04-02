@@ -21,12 +21,18 @@ body {
 /* custom */
 .tpm-container {
   padding: 10px 20px 10px 20px;
-  margin: 20px 20px 10px 20px;
+  margin: 0px;
   background-color: #eeeeee;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
   /* width; 95%; */
+}
+
+@media (min-width: 780px) {
+  .tpm-container {
+    margin: 10px 0px 0px 20px;
+  }
 }
 
 .tpm-footer {
