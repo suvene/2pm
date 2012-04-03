@@ -1,7 +1,9 @@
 <% content_for :submenu do %>
   <ul class="nav nav-pills">
-    <li><%= link_to('ユーザ', { :controller => 'users' } ) %></li>
-    <li><a href="#">グループ</a></li>
+    <li><%= link_to(t('menu.sub.settings.user'), { :controller => 'users' } ) %></li>
+    <li><a href="#"><%= t('menu.sub.settings.group') %></a></li>
   </ul>
 <% end %>
-設定インデックス
+<div>
+  <legend><%= '設定' %></legend>
+</div>

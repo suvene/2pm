@@ -1,42 +1,40 @@
 <% content_for :submenu do %>
   <ul class="nav nav-pills">
-    <li><%= link_to('ユーザ', { :controller => 'users' } ) %></li>
-    <li><a href="#">グループ</a></li>
+    <li><%= link_to(t('menu.sub.settings.user'), { :controller => 'users' } ) %></li>
+    <li><a href="#"><%= t('menu.sub.settings.group') %></a></li>
   </ul>
 <% end %>
 
-<legend>ユーザー一覧</legend>
-<%= link_to 'ユーザー追加', new_user_path %>
+<legend><%= t('title.users_list') %></legend>
+<%= link_to t('link.new'), new_user_path %>
 <br />
 <br />
 
 <table class="table table-bordered table-condensed">
   <thead>
   <tr>
-    <colgroup>
-    <th>ユーザーコード</th>
-    <th>名前</th>
-    </colgroup>
-    <th>ニックネーム</th>
-    <th>Mail</th>
+    <th><%= t('activerecord.attributes.user.cd') %></th>
+    <th><%= t('activerecord.attributes.user.name') %></th>
+    <th><%= t('activerecord.attributes.user.nickname') %></th>
+    <th><%= t('activerecord.attributes.user.mail') %></th>
     <th></th>
     <th></th>
     <th></th>
-  </thead>
   </tr>
+  </thead>
 
-<% @users.each do |user| %>
   <tbody>
+<% @users.each do |user| %>
   <tr>
     <td><%= user.cd %></td>
     <td><%= user.name_l %> <%= user.name_f %></td>
     <td><%= user.nickname %></td>
     <td><%= user.mail %></td>
-    <td><%= link_to '参照', user %></td>
-    <td><%= link_to '編集', edit_user_path(user) %></td>
-    <td><%= link_to '削除', user, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to t('link.show'), user %></td>
+    <td><%= link_to t('link.edit'), edit_user_path(user) %></td>
+    <td><%= link_to t('link.destroy'), user, confirm: t('link.are_you_sure?'), method: :delete %></td>
   </tr>
-</tbody>
 <% end %>
+  </tbody>
 </table>
 
