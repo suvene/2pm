@@ -1,13 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Uid:</b>
-  <%= @user.uid %>
+  <b>ユーザーコード:</b>
+  <%= @user.cd %>
 </p>
 
 <p>
-  <b>Name:</b>
-  <%= @user.name %>
+  <b>名前:</b>
+  <%= @user.name_l %> <%= @user.name_f %>
+</p>
+
+<p>
+  <b>ニックネーム:</b>
+  <%= @user.nickname %>
 </p>
 
 <p>
@@ -16,8 +21,8 @@
 </p>
 
 <p>
-  <b>Lock version:</b>
-  <%= @user.lock_version %>
+  <b>パスワード</b>
+  <%= @user.password %>
 </p>
 
 

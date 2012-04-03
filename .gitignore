@@ -17,3 +17,7 @@
 
 # Ignore session
 .sess-cache/*
+
+# Ignore public/assets
+public/assets
+

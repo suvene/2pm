@@ -12,20 +12,27 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :uid %><br />
-    <%= f.text_field :uid %>
+    <%= f.label :cd %>
+    <%= f.text_field :cd %>
   </div>
   <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.label :name_l %>
+    <%= f.text_field :name_l %> <%= f.text_field :name_f %>
   </div>
   <div class="field">
-    <%= f.label :mail %><br />
+    <%= f.label :nickname %>
+    <%= f.text_field :nickname %>
+  </div>
+  <div class="field">
+    <%= f.label :mail %>
     <%= f.text_field :mail %>
   </div>
   <div class="field">
-    <%= f.label :lock_version %><br />
-    <%= f.number_field :lock_version %>
+    <%= f.label :password %>
+    <%= f.text_field :password %>
+  </div>
+  <div class="field">
+    <%= f.hidden_field :lock_version %>
   </div>
   <div class="actions">
     <%= f.submit %>
