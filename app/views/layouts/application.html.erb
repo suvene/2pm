@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>2PM</title>
+  <title><%= t('project.name') =%></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -26,15 +26,15 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <%= link_to('2PM', '/', { :class => 'brand' } ) %></li>
+        <%= link_to(t('project.name'), '/', { :class => 'brand' } ) %>
         <div class="nav-collapse">
           <ul class="nav">
-            <li><%= link_to('Home', '/') %></li>
-            <li class="active"><%= link_to('管理', { :controller => 'manage' } ) %></li>
-            <li><%= link_to('予実入力', '#' ) %></li>
-            <li><%= link_to('立上げ・計画', { :controller => 'projects' }) %></li>
-            <li><%= link_to('報告', '#' ) %></li>
-            <li><%= link_to('設定', { :controller => 'settings' } ) %></li>
+            <li><%= link_to(t('menu.home'), '/') %></li>
+            <li class="active"><%= link_to(t('menu.manage'), { :controller => 'manage' } ) %></li>
+            <li><%= link_to(t('menu.yojitsu'), '#' ) %></li>
+            <li><%= link_to(t('menu.startup'), { :controller => 'projects' }) %></li>
+            <li><%= link_to(t('menu.report'), '#' ) %></li>
+            <li><%= link_to(t('menu.settings'), { :controller => 'settings' } ) %></li>
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /container -->
@@ -58,7 +58,6 @@
     &copy;2012 suVene&lt;suvene@zeromemory.info&gt;
   </div><!-- navbar navbar-fixed-bottom -->
   </section>
-</div>
 </div><!-- container -->
 
 <script type="text/javascript">

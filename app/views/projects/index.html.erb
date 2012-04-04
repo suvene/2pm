@@ -1,11 +1,10 @@
 <% content_for :submenu do %>
   <ul class="nav nav-pills">
-    <li><a href="#">一覧</a></li>
-    <li><%= link_to 'プロジェクト作成', new_project_path %></li>
-    <li><a href="#">プロジェクト-タスク作成</a></li>
+    <li><%= link_to t('menu.sub.startup.list') %></a></li>
+    <li><%= link_to t('menu.sub.startup.new'), new_project_path %></li>
+    <li><%= link_to t('menu.sub.startup.new-with-task') %></li>
   </ul>
-<% end %>
-
+<% end -%>
 <table width='100%'>
   <tr>
     <th width='50px' align='center'>タスク<br>番号</th>
@@ -23,7 +22,5 @@
     <td><%= link_to 'Edit', edit_project_path(project) %></td>
     <td><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
-<% end %>
+<% end -%>
 </table>
-
-
