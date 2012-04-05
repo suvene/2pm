@@ -10,15 +10,15 @@
 <br />
 <br />
 
-<table class="table table-bordered table-condensed">
+<table class="table table-bordered table-condensed table-striped">
   <thead>
   <tr>
+    <th></th>
+    <th></th>
     <th><%= t('activerecord.attributes.user.cd') %></th>
-    <th><%= t('activerecord.attributes.user.name') %></th>
     <th><%= t('activerecord.attributes.user.nickname') %></th>
+    <th><%= t('activerecord.attributes.user.name') %></th>
     <th><%= t('activerecord.attributes.user.mail') %></th>
-    <th></th>
-    <th></th>
     <th></th>
   </tr>
   </thead>
@@ -26,12 +26,12 @@
   <tbody>
 <% @users.each do |user| %>
   <tr>
-    <td><%= user.cd %></td>
-    <td><%= user.name_l %> <%= user.name_f %></td>
-    <td><%= user.nickname %></td>
-    <td><%= user.mail %></td>
     <td><%= link_to t('link.show'), user %></td>
     <td><%= link_to t('link.edit'), edit_user_path(user) %></td>
+    <td><%= user.cd %></td>
+    <td><%= user.nickname %></td>
+    <td><%= user.name_l %> <%= user.name_f %></td>
+    <td><%= user.mail %></td>
     <td><%= link_to t('link.destroy'), user, confirm: t('link.are_you_sure?'), method: :delete %></td>
   </tr>
 <% end %>

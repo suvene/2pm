@@ -1,7 +1,8 @@
-<%= form_for(@user) do |f| %>
+<%= form_for(@user, :html => { :class => 'form-horizontal'}) do |f| %>
+  <fieldset>
   <% if @user.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+      <h2><%= pluralize(@user.errors.count, "") %> 個のエラーが発生しました:</h2>
 
       <ul>
       <% @user.errors.full_messages.each do |msg| %>
@@ -11,30 +12,58 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :cd %>
-    <%= f.text_field :cd %>
-  </div>
-  <div class="field">
-    <%= f.label :name_l %>
-    <%= f.text_field :name_l %> <%= f.text_field :name_f %>
-  </div>
-  <div class="field">
-    <%= f.label :nickname %>
-    <%= f.text_field :nickname %>
-  </div>
-  <div class="field">
-    <%= f.label :mail %>
-    <%= f.text_field :mail %>
-  </div>
-  <div class="field">
-    <%= f.label :password %>
-    <%= f.text_field :password %>
-  </div>
-  <div class="field">
+    <div class="control-group">
+      <%= f.label :cd, { :class => 'control-label' } %>
+      <div class="controls">
+        <%= f.text_field :cd %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :name_l, { :class => 'control-label' } %>
+      <div class="controls">
+        <%= f.text_field :name_l %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :name_f, { :class => 'control-label' } %>
+      <div class="controls">
+        <%= f.text_field :name_f %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :nickname, { :class => 'control-label' } %>
+      <div class="controls">
+        <%= f.text_field :nickname %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :mail, { :class => 'control-label' } %>
+      <div class="controls">
+        <%= f.email_field :mail %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :mail_confirmation, { :class => 'control-label' } %>
+      <div class="controls">
+        <%= f.email_field :mail_confirmation %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :password, { :class => 'control-label' } %>
+      <div class="controls">
+        <%= f.password_field :password %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :password_confirmation, { :class => 'control-label' } %>
+      <div class="controls">
+        <%= f.password_field :password_confirmation %>
+      </div>
+    </div>
     <%= f.hidden_field :lock_version %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+
+    <div class="form-actions">
+      <%= f.submit %>
+    </div>
+  </fieldset>
 <% end %>

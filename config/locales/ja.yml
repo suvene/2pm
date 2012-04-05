@@ -119,11 +119,15 @@ ja:
       too_long: は%{count}文字以内で入力してください。
       too_short: は%{count}文字以上で入力してください。
       wrong_length: は%{count}文字で入力してください。
+      AtoZ0to9andHifun: は、'A-Z' (英字大文字), '0-9' (数字), または '-' (ハイフン) で入力してください。
     template:
       body: 次の項目を確認してください。
       header:
         one: ! '%{model}にエラーが発生しました。'
         other: ! '%{model}に%{count}つのエラーが発生しました。'
+  notice:
+    user_created: ユーザーが追加されました。
+    user_updated: ユーザーが更新されました。
   helpers:
 #    activerecord で設定した項目が利用される
 #    label:
@@ -211,6 +215,8 @@ ja:
         group: グループ
   title:
     users_list: ユーザー一覧
+    user_new: ユーザー追加
+    user_edit: ユーザー編集
     projects_list: プロジェクトー一覧
     activities_list: アクティビティ
   link:
@@ -231,9 +237,12 @@ ja:
       user:
         cd: ユーザーコード
         name: ユーザー名称
-        name_l: 名前
-        name_f: 苗字
+        name_l: 姓
+        name_f: 名
         nickname: ニックネーム
         mail: Mail
+        mail_confirmation: Mail
+        password: パスワード
+        password_confirmation: パスワード
     errors:
       <<: *errors
