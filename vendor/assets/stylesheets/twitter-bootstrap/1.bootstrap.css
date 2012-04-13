@@ -872,17 +872,27 @@ textarea[readonly] {
   background-color: #fcf8e3;
   border-color: #c09853;
 }
+.field_with_errors { display: inline; }
+.field_with_errors > label,
+.field_with_errors .help-block,
+.field_with_errors .help-inline
 .control-group.error > label,
 .control-group.error .help-block,
 .control-group.error .help-inline {
   color: #b94a48;
 }
+.field_with_errors input,
+.field_with_errors select,
+.field_with_errors textarea,
 .control-group.error input,
 .control-group.error select,
 .control-group.error textarea {
   color: #b94a48;
   border-color: #b94a48;
 }
+.field_with_errors input:focus,
+.field_with_errors select:focus,
+.field_with_errors textarea:focus
 .control-group.error input:focus,
 .control-group.error select:focus,
 .control-group.error textarea:focus {
