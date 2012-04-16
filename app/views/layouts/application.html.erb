@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title><%= t('project.name') =%></title>
+  <title><%= t('project.name') %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -26,15 +26,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <%= link_to(t('project.name'), '/', { :class => 'brand' } ) %>
+        <%= link_to t('project.name'), '/', { :class => 'brand' } %>
         <div class="nav-collapse">
           <ul class="nav">
-            <li><%= link_to(t('menu.home'), '/') %></li>
-            <li class="active"><%= link_to(t('menu.manage'), { :controller => 'manage' } ) %></li>
-            <li><%= link_to(t('menu.yojitsu'), '#' ) %></li>
-            <li><%= link_to(t('menu.startup'), { :controller => 'projects' }) %></li>
-            <li><%= link_to(t('menu.report'), '#' ) %></li>
-            <li><%= link_to(t('menu.settings'), { :controller => 'settings' } ) %></li>
+            <li class="active"><%= link_to(t('menu.home'), '/') %></li>
+            <li><%= link_to t('menu.plans'), '#' %></li>
+            <li><%= link_to t('menu.projects'), { :controller => 'projects' } %></li>
+            <li><%= link_to t('menu.manage'), { :controller => 'manage' } %></li>
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /container -->
@@ -43,7 +41,7 @@
 
 <!-- div class="container" -->
 
-<div class="container">
+<div class=".container">
   <header class="jumbotron subhead">
   <div class="subnav subnav-fixed">
 <%= yield :submenu %>

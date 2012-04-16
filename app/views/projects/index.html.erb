@@ -1,26 +1,31 @@
 <% content_for :submenu do %>
   <ul class="nav nav-pills">
-    <li><%= link_to t('menu.sub.startup.list') %></a></li>
-    <li><%= link_to t('menu.sub.startup.new'), new_project_path %></li>
-    <li><%= link_to t('menu.sub.startup.new-with-task') %></li>
+    <li><%= link_to t('menu.sub.projects.list') %></a></li>
+    <li><%= link_to t('menu.sub.projects.new'), new_project_path %></li>
   </ul>
 <% end -%>
-<table width='100%'>
+
+<legend><%= t('title.projects.list') %></legend>
+<table class="table table-bordered table-condensed table-striped">
+  <thead>
   <tr>
+    <th></th>
+    <th></th>
     <th width='50px' align='center'>タスク<br>番号</th>
     <th>プロジェクト名</th>
     <th></th>
-    <th></th>
-    <th></th>
   </tr>
+  </thead>
 
+  <tbody>
 <% @projects.each do |project| %>
   <tr>
+    <td><%= link_to t('link.show'), project %></td>
+    <td><%= link_to t('link.edit'), edit_project_path(project) %></td>
     <td align='center'><%= project.task_no %></td>
     <td><%= project.name %></td>
-    <td><%= link_to 'Show', project %></td>
-    <td><%= link_to 'Edit', edit_project_path(project) %></td>
-    <td><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to t('link.destroy'), project, confirm: t('link.are_you_sure?'), method: :delete %></td>
   </tr>
 <% end -%>
+  </tbody>
 </table>

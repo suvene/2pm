@@ -41,7 +41,7 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(params[:user])
-    @user.password = Digest::SHA1.hexdigest(:password);
+    #@user.password = Digest::SHA1.hexdigest(:password);
 
     respond_to do |format|
       if @user.save

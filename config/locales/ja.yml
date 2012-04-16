@@ -200,25 +200,37 @@ ja:
     name: 2PM
   menu:
     home: Home
+    schedule: プラン
+    plans: プラン 
+    projects: プロジェクト
     manage: 管理
-    yojitsu: 予実入力
-    startup: 立上げ・計画
     report: 報告
     settings: 設定
     sub:
-      startup:
+      home:
+        index: HOME
+      schedule:
+      projects:
         list: 一覧
-        new: プロジェクト作成
-        new-with-task: プロジェクト-タスク作成
+        new: 新規作成
+      manage:
+      report:
       settings:
-        user: ユーザ
-        group: グループ
+        general: 一般
+        users: ユーザ
+        groups: グループ
   title:
-    users_list: ユーザー一覧
-    user_new: ユーザー追加
-    user_edit: ユーザー編集
-    projects_list: プロジェクトー一覧
-    activities_list: アクティビティ
+    home:
+      dashboard: ダッシュボード
+    plans:
+    projects:
+      list: プロジェクトー一覧
+    settings:
+      general: 一般設定
+      users:
+        list: ユーザー一覧
+        new: ユーザー追加
+        edit: ユーザー編集
   link:
     new: 新規追加
     show: 参照
