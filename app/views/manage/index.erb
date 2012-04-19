@@ -1,9 +1,13 @@
 <% content_for :submenu do %>
   <ul class="nav nav-pills">
-    <li class="active"><a href="#">コミュニケーション</a></li>
-    <li><a href="#">課題管理</a></li>
-    <li><a href="#">変更管理</a></li>
+    <li class="active"><%= link_to t('menu.sub.settings.general'), '#' %></li>
+    <li><%= link_to t('menu.sub.settings.users'), { :controller => 'users' } %></li>
+    <li><%= link_to t('menu.sub.settings.groups'), '#' %></li>
   </ul>
 <% end %>
-管理index
+<legend><%= t('title.settings.general') %></legend>
+
+
+
+ぷんすこ
 

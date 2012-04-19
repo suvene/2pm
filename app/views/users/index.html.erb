@@ -1,12 +1,13 @@
 <% content_for :submenu do %>
   <ul class="nav nav-pills">
-    <li><%= link_to(t('menu.sub.settings.user'), { :controller => 'users' } ) %></li>
-    <li><a href="#"><%= t('menu.sub.settings.group') %></a></li>
+    <li><%= link_to t('menu.sub.settings.general'), { :controller => 'manage' } %></li>
+    <li class="active"><%= link_to t('menu.sub.settings.users'), { :controller => 'users' } %></li>
+    <li><%= link_to t('menu.sub.settings.groups'), '#' %></li>
   </ul>
 <% end %>
 
-<legend><%= t('title.users_list') %></legend>
-<%= link_to t('link.new'), new_user_path %>
+<legend><%= t('title.settings.users.list') %></legend>
+<%= button_to t('link.new'), new_user_path, { :class => 'btn btn-primary btn-large' } %>
 <br />
 <br />
 
