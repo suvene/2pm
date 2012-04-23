@@ -1,13 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
 one:
-  uid: MyString
-  name: MyString
-  mail: MyString
-  lock_version: 1
+  cd: '000'
+  name_f: fast
+  name_l: last
+  nickname: nick
+  mail: 000@exsample.com
+  password: aaaaa
+  lock_version: 0
+  
+<% 1.upto(100) do |i| %>
+user<%= i %>:
+  cd: USER<%= i %>
+  name_f: USER<%= i %>
+  name_l: USER<%= i %>
+  nickname: USER<%= i %>
+  mail: user<%= i %>@exsample.com
+  password: aaaaa
+  lock_version: 0
+<% end %>
 
-two:
-  uid: MyString
-  name: MyString
-  mail: MyString
-  lock_version: 1
