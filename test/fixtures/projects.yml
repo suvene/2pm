@@ -1,7 +1,12 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-<% 1.upto(100) do |n| %>
-project<%= n %>:
-  task_no: <%= n %>
-  name: prj<%= n %>
+one:
+  task_no: 000
+  name: Task0
+  lock_version: 0 
+
+<% 1.upto(100) do |i| %>
+project<%= i %>:
+  task_no: <%= i %>
+  name: prj<%= i %>
   lock_version: 0 
 <% end %>

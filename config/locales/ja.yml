@@ -231,6 +231,7 @@ ja:
         list: ユーザー一覧
         new: ユーザー追加
         edit: ユーザー編集
+        show: ユーザー情報
   link:
     new: 新規追加
     show: 参照

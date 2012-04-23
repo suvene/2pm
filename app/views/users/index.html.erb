@@ -7,7 +7,7 @@
 <% end %>
 
 <legend><%= t('title.settings.users.list') %></legend>
-<%= button_to t('link.new'), new_user_path, { :class => 'btn btn-primary btn-large' } %>
+<%= button_to t('link.new'), new_user_path, { :class => 'btn btn-primary btn-large', :method => 'get' } %>
 <br />
 <br />
 
